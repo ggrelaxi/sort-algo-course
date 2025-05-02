@@ -41,3 +41,10 @@ def test_multiply_min():
     assert list[1] == 2
     assert list[2] == 2
     assert list[3] == 3
+
+
+def test_middle_index():
+    list = [1, 2, 3, 10, 8, 7, 5, 6]
+    SelectionSortStep(list, 3)
+    assert list[3] == 5
+    assert list[6] == 10

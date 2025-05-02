@@ -4,19 +4,20 @@ from typing import List
 def SelectionSortStep(array: List[int], i: int):
     if len(array) < 2:
         return
+
     if i > (len(array) - 1):
         return
 
-    min_index = i
+    min_item_index = i
 
-    for position in range(i + i, len(array)):
-        if array[position] < array[i]:
-            min_index = position
+    for index in range(i + 1, len(array)):
+        if array[index] <= array[min_item_index]:
+            min_item_index = index
 
-    if min_index > i:
+    if min_item_index > i:
         temp = array[i]
-        array[i] = array[min_index]
-        array[min_index] = temp
+        array[i] = array[min_item_index]
+        array[min_item_index] = temp
 
 
 def BubbleSortStep(array: List[int]) -> bool:
