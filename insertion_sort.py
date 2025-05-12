@@ -12,7 +12,6 @@ def InsertionSortStep(array: List[int], step: int, i: int):
         start = i
 
     for position in range(start, len(array), step):
-        print("posiition", position)
 
         prev_position = position
         while (
@@ -26,4 +25,3 @@ def InsertionSortStep(array: List[int], step: int, i: int):
             array[prev_position - step] = temp
 
             prev_position = prev_position - step
-            print(array)
