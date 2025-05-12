@@ -19,7 +19,6 @@ def InsertionSortStep(array: List[int], step: int, i: int):
             and prev_position - step >= 0
             and array[prev_position - step] > array[prev_position]
         ):
-            print("before", array)
             temp = array[prev_position]
             array[prev_position] = array[prev_position - step]
             array[prev_position - step] = temp
