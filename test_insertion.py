@@ -46,3 +46,18 @@ def test_success_step_case():
     assert list[4] == 6
     assert list[5] == 2
     assert list[6] == 7
+
+
+def test_failed_from_review():
+    list = [7, 6, 5, 4, 3, 2, 1]
+    step = 3
+    i = 0
+    InsertionSortStep(list, step, i)
+
+    assert list[0] == 1
+    assert list[1] == 6
+    assert list[2] == 5
+    assert list[3] == 4
+    assert list[4] == 3
+    assert list[5] == 2
+    assert list[6] == 7

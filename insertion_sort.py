@@ -7,11 +7,7 @@ def InsertionSortStep(array: List[int], step: int, i: int):
     if i >= len(array):
         return
 
-    start = 1
-    if i != 0:
-        start = i
-
-    for position in range(start, len(array), step):
+    for position in range(i, len(array), step):
 
         prev_position = position
         while (
