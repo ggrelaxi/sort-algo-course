@@ -27,6 +27,3 @@ def InsertionSortStep(array: List[int], step: int, i: int):
 
             prev_position = prev_position - step
             print(array)
-
-
-InsertionSortStep([4, 3, 1, 2], 1, 1)
