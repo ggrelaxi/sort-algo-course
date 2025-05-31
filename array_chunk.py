@@ -15,7 +15,6 @@ def ArrayChunk(M: List[int]):
             i1 += 1
 
         i2 -= 1
-
         while M[i2] > N:
             i2 -= 1
 
@@ -23,3 +22,8 @@ def ArrayChunk(M: List[int]):
             return pivot_index
 
         M[i1], M[i2] = M[i2], M[i1]
+
+        if i1 == pivot_index:
+            pivot_index = i2
+        elif i2 == pivot_index:
+            pivot_index = i1
